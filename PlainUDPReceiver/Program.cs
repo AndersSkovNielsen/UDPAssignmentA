@@ -6,7 +6,11 @@ namespace PlainUDPReceiver
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            UDPReceiver receiver = new UDPReceiver(11001);
+
+            receiver.Start();
+
+            Console.ReadLine();
         }
     }
 }
